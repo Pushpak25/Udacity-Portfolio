@@ -1,0 +1,164 @@
+/*Semantic tag styling */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body  {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  color: #2d3c49;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #7d97ad;
+  font-weight:bold;
+}
+
+h1 {
+    font-size: 40px; 
+}
+
+a:hover, a:visited, a:link, a:active {
+  color: #2d3c49;
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  padding: 5px;
+}
+/*Custom class styling */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.header-container {
+  display: flex;
+}
+.title {
+	text-align: right;
+	width:50%
+}
+.logo {
+	width: 50%
+}
+/* bootstrap navbar */
+.navbar-default {
+  background-color: #f0f0f0;
+  border: transparent;
+  padding-left: 20px
+}
+
+.nav-item {
+  text-transform: uppercase;
+}
+
+.projects-container {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#projects-header {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.project {
+  margin: 10px;
+}
+
+.project-img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #f0f0f0;
+  margin-bottom: 0;
+}
+
+footer ul {
+    text-align: center;
+    padding: 0;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-flex;
+  margin: 30px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 550px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .title {
+	  text-align:center;
+	  width:100%;
+  }
+  h4 {
+    font-size: 24px
+  }
+  
+  .projects-container {
+	  flex-wrap:wrap;
+  }
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 2em;
+  }
+
+  p,
+  a {
+    font-size: 1.75rem;
+  }
+
+  
+  .projects-container {
+    flex-flow: wrap column;
+  }
+
+  .project {
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .project-img {
+    max-width: 100%;
+  }
+
+  
+
+  }
+}
